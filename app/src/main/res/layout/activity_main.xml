@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:orientation="vertical" android:padding="20dp">
+    <ImageView android:layout_width="match_parent" android:layout_height="130dp"
+        android:layout_marginBottom="14dp" android:contentDescription="Illustrated bowl of fresh ingredients"
+        android:scaleType="centerCrop" android:src="@drawable/cooking_illustration" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="My Pantry" android:textColor="@color/ink" android:textSize="28sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Keep track of ingredients and cook what you have." android:textColor="@color/muted" android:paddingTop="8dp" />
+    <Button android:id="@+id/addButton" style="@style/PrimaryButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Add ingredient" />
+    <ListView android:id="@+id/pantryList" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:divider="@android:color/transparent" android:dividerHeight="8dp" android:cacheColorHint="@android:color/transparent" />
+    <TextView android:id="@+id/emptyMessage" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Your pantry is empty. Add your first ingredient."
+        android:padding="16dp" android:textColor="@color/muted" android:visibility="gone" />
+    <!-- Bottom navigation: the three primary destinations stay together. -->
+    <LinearLayout android:id="@+id/bottomNavigation" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal"
+        android:background="@color/light_green" android:padding="4dp">
+        <Button android:id="@+id/suggestionsButton" style="@style/SecondaryButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Suggested" />
+        <Button android:id="@+id/catalogButton" style="@style/SecondaryButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Recipes" />
+        <Button android:id="@+id/settingsButton" style="@style/SecondaryButton"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Settings" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <color name="background">#101A18</color>
+    <color name="surface">#1D302B</color>
+    <color name="ink">#F3F4E9</color>
+    <color name="muted">#B6C8BC</color>
+    <color name="green">#A5D87E</color>
+    <color name="light_green">#284237</color>
+    <color name="orange">#EFC482</color>
+</resources>
