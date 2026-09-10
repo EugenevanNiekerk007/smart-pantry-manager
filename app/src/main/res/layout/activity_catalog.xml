@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:orientation="vertical" android:padding="20dp">
+    <ImageView android:layout_width="match_parent" android:layout_height="130dp"
+        android:layout_marginBottom="14dp" android:contentDescription="Illustrated bowl of fresh ingredients"
+        android:scaleType="centerCrop" android:src="@drawable/cooking_illustration" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Recipe Collection" android:textColor="@color/ink"
+        android:textSize="27sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Browse all recipes, even ones you cannot cook yet."
+        android:textColor="@color/muted" android:paddingTop="8dp" />
+    <Button android:id="@+id/addRecipeButton" style="@style/PrimaryButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:text="Add my recipe" />
+    <ListView android:id="@+id/catalogList" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:divider="@android:color/transparent" android:dividerHeight="8dp" android:cacheColorHint="@android:color/transparent" />
+    <Button android:id="@+id/backButton" style="@style/SecondaryButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back" />
+</LinearLayout>
