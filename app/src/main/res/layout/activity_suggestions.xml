@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:orientation="vertical" android:padding="20dp">
+    <ImageView android:layout_width="match_parent" android:layout_height="130dp"
+        android:layout_marginBottom="14dp" android:contentDescription="Illustrated bowl of fresh ingredients"
+        android:scaleType="centerCrop" android:src="@drawable/cooking_illustration" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Suggested Recipes" android:textColor="@color/ink" android:textSize="26sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Only recipes you can make entirely from your pantry." android:paddingTop="8dp" />
+    <ListView android:id="@+id/recipeList" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:divider="@android:color/transparent" android:dividerHeight="8dp" android:cacheColorHint="@android:color/transparent" />
+    <TextView android:id="@+id/noRecipes" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="No recipes match your pantry yet. Add more ingredients."
+        android:padding="16dp" android:textColor="@color/muted" android:visibility="gone" />
+    <Button android:id="@+id/almostButton" style="@style/SecondaryButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Almost There (one ingredient short)" />
+    <Button android:id="@+id/catalogButton" style="@style/SecondaryButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Browse all recipes" />
+    <Button android:id="@+id/backButton" style="@style/PrimaryButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Back to pantry" />
+</LinearLayout>
