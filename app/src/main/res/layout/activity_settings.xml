@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="20dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Settings" android:textSize="26sp" android:textColor="@color/ink" android:textStyle="bold" />
+    <Switch android:id="@+id/expiryToggle" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Show expiring-soon reminder (within 3 days)" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="This reminder appears on the pantry screen when enabled."
+        android:paddingTop="12dp" />
+    <Button android:id="@+id/backButton" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Back to pantry" style="@style/SecondaryButton" />
+</LinearLayout>
