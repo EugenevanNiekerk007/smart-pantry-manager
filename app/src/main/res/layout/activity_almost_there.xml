@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background" android:orientation="vertical" android:padding="20dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Almost There" android:textColor="@color/ink"
+        android:textSize="27sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="These recipes are short by exactly one ingredient or quantity. They are not ready to cook."
+        android:textColor="@color/muted" android:paddingTop="8dp" />
+    <ListView android:id="@+id/almostList" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:dividerHeight="8dp" />
+    <TextView android:id="@+id/noAlmost" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="No recipes are one ingredient away right now."
+        android:padding="16dp" android:textColor="@color/muted" android:visibility="gone" />
+    <Button android:id="@+id/backButton" style="@style/SecondaryButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Back to suggestions" />
+</LinearLayout>
